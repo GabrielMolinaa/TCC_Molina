@@ -8,8 +8,10 @@ from sklearn.metrics import confusion_matrix
 import os
 from tensorflow.keras.models import Sequential, Model, load_model
 import datetime
-from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 from tensorflow import keras as K
+from tensorflow.keras.optimizers import Adam
+
 
 def get_data(path,file):
     mat = loadmat(os.path.join(path,file))
@@ -92,19 +94,21 @@ def windowing(data, reps, gestures, win_len, win_stride):
 def train_model(model, X_train_wind, y_train_wind, X_test_wind, y_test_wind, save_to, epoch = 300):
         from tensorflow import keras as K
         #opt_adam = K.optimizers.Adam(lr=0.0001, beta_1=0.9, beta_2=0.999, epsilon=1e-08)
-        model.compile(loss='categorical_crossentropy' , optimizer='adam', metrics=['categorical_accuracy'])
+        optimizer = Adam(learning_rate=0.001) 
+        model.compile(loss='categorical_crossentropy' , optimizer=optimizer, metrics=['categorical_accuracy'])
 
 #         log_dir="logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
         
         es = EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=10)
         mc = ModelCheckpoint(save_to + '_best_model.keras', monitor='val_categorical_accuracy', mode='max', verbose=1, save_best_only=True)
+        reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.5, patience=5, min_lr=1e-6)
 
         history = model.fit(x=X_train_wind, y=y_train_wind, epochs=epoch, shuffle=True,
                     verbose=1,
-                    validation_data = (X_test_wind, y_test_wind), callbacks=[es, mc],
-                    batch_size=64)
+                    validation_data = (X_test_wind, y_test_wind), callbacks=[es, mc, reduce_lr],
+                    batch_size=128)
 
-        saved_model = load_model(save_to + '_best_model.h5')
+        saved_model = load_model(save_to + '_best_model.keras')
         # evaluate the model
         _, train_acc = saved_model.evaluate(X_train_wind, y_train_wind, verbose=0)
         _, test_acc = saved_model.evaluate(X_test_wind, y_test_wind, verbose=0)
