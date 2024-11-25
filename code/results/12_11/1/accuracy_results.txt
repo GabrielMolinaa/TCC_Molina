@@ -1,3 +1,0 @@
-Random Forest - Acurácia no treino: 0.999, Acurácia no teste: 0.747
-SVM - Acurácia no treino: 1.000, Acurácia no teste: 0.714
-LDA - Acurácia no treino: 0.675, Acurácia no teste: 0.617

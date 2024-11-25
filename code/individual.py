@@ -3,17 +3,15 @@ import numpy as np
 import time
 from models.random_forest_model import get_random_forest_model
 from train_and_evaluate import train_and_evaluate_model
-import Extract_Features as ef
+import helpers.Extract_Features as ef
 
 print("Iniciando o treinamento para todos os indivíduos...")
 
-# Defina o caminho para os arquivos .npy
 data2_path = r"E:\db3/"
 
-# Lista de IDs dos indivíduos
+
 subjects = [f"S{i}" for i in range(1, 12)]  
 
-# Função para treinar um modelo para um indivíduo
 def train_model_for_individual(subject_id):
     try:
         print(f"Iniciando o treinamento para {subject_id}...")
@@ -26,18 +24,17 @@ def train_model_for_individual(subject_id):
 
         print(f"Dados carregados para {subject_id}. X_train shape: {X_train.shape}, y_train shape: {y_train.shape}")
 
-        # Ajustar as labels, se necessário
+
         if len(y_train.shape) > 1 and y_train.shape[1] > 1:
             y_train = np.argmax(y_train, axis=1)
         if len(y_test.shape) > 1 and y_test.shape[1] > 1:
             y_test = np.argmax(y_test, axis=1)
 
-        # Extração de features
+
         print(f"Extraindo e normalizando as features para {subject_id}...")
         X_train_features = ef.process_emg_signals(X_train, feature_set=3)
         X_test_features = ef.process_emg_signals(X_test, feature_set=3)
 
-        # Treinamento do modelo
         start_time = time.time()
         rf_model, rf_params, rf_score = get_random_forest_model(X_train_features, y_train)
         train_and_evaluate_model(rf_model, f"Random Forest - {subject_id}", X_train_features, y_train, X_test_features, y_test, rf_params)
@@ -49,7 +46,7 @@ def train_model_for_individual(subject_id):
     except Exception as e:
         print(f"Erro ao treinar para {subject_id}: {str(e)}")
 
-# Treinar os modelos para todos os indivíduos sequencialmente
+
 for subject in subjects:
     train_model_for_individual(subject)
 
