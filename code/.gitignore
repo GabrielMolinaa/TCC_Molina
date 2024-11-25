@@ -21,7 +21,8 @@ pyvenv/
 *.data
 *.keras
 *.mat
-
+*.h5
+*.pkl
 
 *.log
 *.tmp
