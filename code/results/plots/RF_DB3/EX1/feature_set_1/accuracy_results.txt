@@ -1,0 +1,40 @@
+Random Forest - S1 - Acurácia no treino: 1.000, Acurácia no teste: 0.617
+Random Forest - S1 - F1-Score no treino: 1.000, F1-Score no teste: 0.619
+Parâmetros: OrderedDict([('max_depth', 23), ('min_samples_leaf', 1), ('min_samples_split', 2), ('n_estimators', 500)])
+
+Random Forest - S2 - Acurácia no treino: 1.000, Acurácia no teste: 0.739
+Random Forest - S2 - F1-Score no treino: 1.000, F1-Score no teste: 0.737
+Parâmetros: OrderedDict([('max_depth', 16), ('min_samples_leaf', 1), ('min_samples_split', 3), ('n_estimators', 495)])
+
+Random Forest - S3 - Acurácia no treino: 1.000, Acurácia no teste: 0.659
+Random Forest - S3 - F1-Score no treino: 1.000, F1-Score no teste: 0.659
+Parâmetros: OrderedDict([('max_depth', 30), ('min_samples_leaf', 1), ('min_samples_split', 3), ('n_estimators', 487)])
+
+Random Forest - S4 - Acurácia no treino: 1.000, Acurácia no teste: 0.580
+Random Forest - S4 - F1-Score no treino: 1.000, F1-Score no teste: 0.581
+Parâmetros: OrderedDict([('max_depth', 20), ('min_samples_leaf', 1), ('min_samples_split', 10), ('n_estimators', 62)])
+
+Random Forest - S5 - Acurácia no treino: 1.000, Acurácia no teste: 0.539
+Random Forest - S5 - F1-Score no treino: 1.000, F1-Score no teste: 0.535
+Parâmetros: OrderedDict([('max_depth', 30), ('min_samples_leaf', 1), ('min_samples_split', 3), ('n_estimators', 158)])
+
+Random Forest - S6 - Acurácia no treino: 0.725, Acurácia no teste: 0.587
+Random Forest - S6 - F1-Score no treino: 0.724, F1-Score no teste: 0.574
+Parâmetros: OrderedDict([('max_depth', 8), ('min_samples_leaf', 1), ('min_samples_split', 20), ('n_estimators', 459)])
+
+Random Forest - S8 - Acurácia no treino: 1.000, Acurácia no teste: 0.624
+Random Forest - S8 - F1-Score no treino: 1.000, F1-Score no teste: 0.613
+Parâmetros: OrderedDict([('max_depth', 30), ('min_samples_leaf', 1), ('min_samples_split', 16), ('n_estimators', 478)])
+
+Random Forest - S9 - Acurácia no treino: 1.000, Acurácia no teste: 0.711
+Random Forest - S9 - F1-Score no treino: 1.000, F1-Score no teste: 0.708
+Parâmetros: OrderedDict([('max_depth', 22), ('min_samples_leaf', 1), ('min_samples_split', 19), ('n_estimators', 100)])
+
+Random Forest - S10 - Acurácia no treino: 0.996, Acurácia no teste: 0.505
+Random Forest - S10 - F1-Score no treino: 0.996, F1-Score no teste: 0.484
+Parâmetros: OrderedDict([('max_depth', 23), ('min_samples_leaf', 9), ('min_samples_split', 5), ('n_estimators', 135)])
+
+Random Forest - S11 - Acurácia no treino: 1.000, Acurácia no teste: 0.698
+Random Forest - S11 - F1-Score no treino: 1.000, F1-Score no teste: 0.691
+Parâmetros: OrderedDict([('max_depth', 19), ('min_samples_leaf', 1), ('min_samples_split', 4), ('n_estimators', 496)])
+

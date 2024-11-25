@@ -1,0 +1,10 @@
+Random Forest - S1 - Acurácia no treino: 0.985, Acurácia no teste: 0.774
+Random Forest - S2 - Acurácia no treino: 0.981, Acurácia no teste: 0.796
+Random Forest - S3 - Acurácia no treino: 0.989, Acurácia no teste: 0.725
+Random Forest - S4 - Acurácia no treino: 0.973, Acurácia no teste: 0.682
+Random Forest - S5 - Acurácia no treino: 0.996, Acurácia no teste: 0.798
+Random Forest - S6 - Acurácia no treino: 0.996, Acurácia no teste: 0.712
+Random Forest - S7 - Acurácia no treino: 0.999, Acurácia no teste: 0.624
+Random Forest - S8 - Acurácia no treino: 0.985, Acurácia no teste: 0.746
+Random Forest - S9 - Acurácia no treino: 0.966, Acurácia no teste: 0.822
+Random Forest - S10 - Acurácia no treino: 0.977, Acurácia no teste: 0.777

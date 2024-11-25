@@ -1,0 +1,7 @@
+Random Forest - Dados Combinados - Acurácia no treino: 0.987, Acurácia no teste: 0.698
+Random Forest - Dados Combinados - Acurácia no treino: 0.949, Acurácia no teste: 0.673
+Random Forest - Dados Combinados - Acurácia no treino: 0.977, Acurácia no teste: 0.735
+Random Forest - Dados Combinados - Acurácia no treino: 0.997, Acurácia no teste: 0.734
+Random Forest - Dados Combinados - Acurácia no treino: 0.761, Acurácia no teste: 0.666
+Random Forest - Acurácia no treino: 0.986, Acurácia no teste: 0.781
+Random Forest - Acurácia no treino: 0.984, Acurácia no teste: 0.768

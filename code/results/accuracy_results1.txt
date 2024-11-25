@@ -1,0 +1,13 @@
+LDA - Acurácia no treino: 0.987, Acurácia no teste: 0.834
+SVM - Acurácia no treino: 0.978, Acurácia no teste: 0.798
+Random Forest - Acurácia no treino: 1.000, Acurácia no teste: 0.791
+Random Forest - S1 - Acurácia no treino: 0.995, Acurácia no teste: 0.774
+Random Forest - S2 - Acurácia no treino: 0.999, Acurácia no teste: 0.783
+Random Forest - S3 - Acurácia no treino: 0.999, Acurácia no teste: 0.725
+Random Forest - S4 - Acurácia no treino: 1.000, Acurácia no teste: 0.700
+Random Forest - S5 - Acurácia no treino: 1.000, Acurácia no teste: 0.791
+Random Forest - S6 - Acurácia no treino: 0.988, Acurácia no teste: 0.708
+Random Forest - S7 - Acurácia no treino: 0.999, Acurácia no teste: 0.604
+Random Forest - S8 - Acurácia no treino: 0.992, Acurácia no teste: 0.736
+Random Forest - S9 - Acurácia no treino: 1.000, Acurácia no teste: 0.834
+Random Forest - S10 - Acurácia no treino: 0.996, Acurácia no teste: 0.787
