@@ -29,6 +29,7 @@ pyvenv/
 *.bak
 *.swp
 
+bayesian_cnn_tuning/
 .venv/
 env/
 pyenv/
