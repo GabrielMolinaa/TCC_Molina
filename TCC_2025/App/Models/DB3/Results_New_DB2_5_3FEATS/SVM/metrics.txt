@@ -1,0 +1,2 @@
+Accuracy: 0.7945
+Training Time (s): 23171.24
