@@ -1,0 +1,6 @@
+dense1_units: 512
+l2: 0.004213313484484104
+dropout1: 0.5
+dense2_units: 192
+dropout2: 0.3
+lr: 0.0008766994766451402

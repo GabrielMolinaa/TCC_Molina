@@ -1,0 +1,2 @@
+Model,Accuracy,F1-score
+SVM_Optuna,0.70223534373682,0.7015057233635179
