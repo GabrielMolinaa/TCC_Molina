@@ -1,1 +1,1 @@
-# TCC_Molina
+# sEMG-Based-Gesture-Recognition-with-BO
